@@ -7,7 +7,6 @@ import 'snack_bar_service.dart';
 Future fetchWeatherInfo(city) async {
   try {
     String apiKey = "97de2580d35e4e48826130548250801";
-    // String apiKey = "2ba0a3b4a93643e8a3b232706241212";
     Response response = await get(Uri.parse(
       'https://api.weatherapi.com/v1/current.json?key=$apiKey&q=$city&lang=ru',
       // 'https://api.weatherapi.com/v1/current.json?key=2ba0a3b4a93643e8a3b232706241212&q=omsk&lang=ru',
